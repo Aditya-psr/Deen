@@ -1,0 +1,116 @@
+/* Root container */
+.assign-examiner-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #f9fafb;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Headings */
+.assign-examiner-container h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+/* Form styles */
+.examiner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #34495e;
+}
+
+.form-group input {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Submit button */
+.submit-btn {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #3498db;
+}
+
+/* Table styles */
+.examiner-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.examiner-table th, .examiner-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.examiner-table th {
+  background-color: #3498db;
+  color: white;
+}
+
+.examiner-table td {
+  background-color: #f5f5f5;
+}
+
+/* Action buttons */
+.edit-btn, .delete-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #2980b9;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #3498db;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}

@@ -1,0 +1,67 @@
+/* Container and form styling */
+.mark-entry-container {
+    padding: 20px;
+    margin-left: 200px; /* For aligning with the sidebar */
+    background-color: #ffddab;
+    min-height: 100vh;
+    color: #080849;
+  }
+  
+  .mark-entry-container h2 {
+    text-align: center;
+    color: #080849;
+    font-size: 28px;
+  }
+  
+  .mark-entry-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mark-entry-form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .mark-entry-form input,
+  .mark-entry-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .mark-entry-form button {
+    margin-top: 20px;
+    background-color: #080849;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .mark-entry-form button:hover {
+    background-color: #080849a6;
+  }
+  
+  /* Total marks display */
+  .total-marks {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff3e0;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .total-marks h3 {
+    margin: 5px 0;
+  }
+  

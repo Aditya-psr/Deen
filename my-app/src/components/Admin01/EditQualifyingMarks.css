@@ -1,0 +1,50 @@
+/* Edit Qualifying Marks Styles */
+
+.edit-qualifying-marks-form {
+  background-color: #ffddab; /* Matching Sidebar background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: #080849; /* Matching text color from Sidebar */
+  width: 300px;
+  margin: 50px auto;
+}
+
+.edit-qualifying-marks-form h3 {
+  color: #080849;
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.edit-qualifying-marks-form label {
+  color: #080849;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.edit-qualifying-marks-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #080808;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.edit-qualifying-marks-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2980b9; /* Matching active state in Sidebar */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-qualifying-marks-form button:hover {
+  background-color: #080849;
+  color: white;
+  border-radius: 4px;
+}

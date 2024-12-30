@@ -1,0 +1,54 @@
+.generate-report-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+h3 {
+  color: #555;
+  margin-top: 20px;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.report-status {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: green; /* Change color based on status (green for success) */
+}
+
+.report-status.error {
+  color: red; /* Red color for error messages */
+}

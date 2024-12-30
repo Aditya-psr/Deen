@@ -1,0 +1,224 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.containerr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(./img9.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+.card {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  margin: 0 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card .card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 15px;
+  border-radius: 20px;
+}
+
+.card-front {
+  background-color: #fff;
+  color: #333;
+}
+
+.card-back {
+  background: linear-gradient(135deg, #ffddab, #cc9c70);
+  color: #333;
+  transform: rotateY(180deg);
+  position: relative;
+  
+}
+
+.card-back button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  outline: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  position: relative;
+  left: 20px;
+}
+
+.card-back button:hover {
+  background-color: #f0f0f0;
+}
+
+.text{
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  bottom:30px;
+  right: 15px;
+}
+img{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  right: 20px;
+  bottom: 35px;
+}
+p{
+  position: relative;
+  left: 20px;
+}
+ */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.home-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex; /* Use flexbox to center */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #000;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./img10.jpg) no-repeat center center;
+  background-size: cover;
+  animation: rotateBackground 20s linear infinite; /* Rotate background */
+  z-index: 1; /* Send background to back */
+}
+
+@keyframes rotateBackground {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.containerr {
+  display: flex;
+  justify-content: center; /* Center cards horizontally */
+  align-items: center; /* Center cards vertically */
+  position: relative;
+  gap: 20px; /* Add some space between the cards */
+  z-index: 2; /* Send cards to front */
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card .card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 20px;
+}
+
+.card-front {
+  background-color: #fff;
+  color: #333;
+}
+
+.card-back {
+  background: linear-gradient(135deg, #ffddab, #cc9c70);
+  color: #333;
+  transform: rotateY(180deg);
+  position: relative;
+}
+
+.card-back button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  outline: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.card-back button:hover {
+  background-color: #f0f0f0;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+p {
+  position: relative;
+}

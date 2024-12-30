@@ -1,0 +1,171 @@
+/* Root container */
+.add-edit-teacher-form {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading */
+.add-edit-teacher-form h3 {
+  text-align: center;
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Add Teacher button */
+.add-edit-teacher-form button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.add-edit-teacher-form button:hover {
+  background-color: #2980b9;
+}
+
+/* Form container */
+.teacher-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Form input fields */
+.teacher-form input {
+  width: calc(50% - 10px); /* 50% width for input fields, accounting for gap */
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.teacher-form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Gender radio buttons container */
+.gender-selection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.gender-selection label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #34495e;
+}
+
+.gender-selection input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Submit / Update button in form */
+.teacher-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.teacher-form button:hover {
+  background-color: #2ecc71;
+}
+
+/* Table styles */
+.teacher-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.teacher-table th, .teacher-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.teacher-table th {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.teacher-table td {
+  background-color: #f4f7fa;
+  color: #2c3e50;
+}
+
+/* Action buttons */
+.teacher-table button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.teacher-table button:hover {
+  opacity: 0.85;
+}
+
+.teacher-table .edit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.teacher-table .delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.teacher-table .edit-btn:hover {
+  background-color: #2980b9;
+}
+
+.teacher-table .delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  .teacher-form input {
+    width: 100%;
+  }
+
+  .teacher-table th, .teacher-table td {
+    padding: 10px;
+  }
+
+  .teacher-form button {
+    width: 100%;
+  }
+}
+ 
